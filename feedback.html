@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        input[type=text],select,textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit]{
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: #45a049;
+        }
+        .container{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Feedback Form</h3>
+    <div class="container">
+        <form action="/action_page.php">
+            
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Your Name.....">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Your Last Name....">
+
+            <label for="pnumber">Phone Number</label>
+            <input type="text" id="fname" placeholder="PhoneNumber....">
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="australia">Australia</option>
+                <option value="australia">USA</option>
+                <option value="australia">India</option>
+                <option value="australia">Canada</option>
+                <option value="australia">South Africa</option>
+                <option value="australia">Russia</option>
+                <option value="australia">Pakistan</option>
+                <option value="australia">Bangladesh</option>
+                <option value="australia">Zimbawe</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea name="subject" id="subject" placeholder="Write Something...." style="height:200px"></textarea>
+            <a href="feedback 2.html"><input type="submit" class="button" value="Submit"></a>
+
+        </form>
+    </div>
+</body>
+</html>
